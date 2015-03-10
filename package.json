@@ -11,21 +11,15 @@
   ],
   "author": "Sapient",
   "license": "ISC",
-
   "jspm": {
     "main": "src/assets/scripts/main",
-    "directories" : {
-      "lib" : "src",
-      "files" : "src"
+    "directories": {
+      "files": "src",
+      "lib": "src"
     },
     "dependencies": {
-      "jquery": "*" 
-    },
-    "shim": {
-     "some/global": {
-       "deps": ["jquery"],
-       "exports": "globalExportName"
-      }
+      "header": "github:mattslavin/module_header@master",
+      "jquery": ""
     }
   }
 }
