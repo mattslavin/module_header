@@ -1,9 +1,11 @@
 function testModule(){
-	this.foo = function(){
+	var foo = function(){
 		console.log("Return foo result");
-	}
+	};
 
-	this.bar = function(){
+	var bar = function(){
 		console.log("Return bar result");
-	}
+	};
+
+	return bar;
 }
