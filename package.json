@@ -5,13 +5,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "main": "assets/scripts/main",
   "keywords": [
     "header,module, header-module"
   ],
   "author": "Sapient",
   "license": "ISC",
   "jspm": {
-    "main": "src/assets/scripts/main",
+
     "directories": {
       "files": "src",
       "lib": "src"
