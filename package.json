@@ -20,10 +20,11 @@
       "lib" : "src",
       "files" : "src"
     },
-  "shim": {
+    "shim": {
      "some/global": {
        "deps": ["jquery"],
        "exports": "globalExportName"
-   }
+      }
+    }
   }
 }
