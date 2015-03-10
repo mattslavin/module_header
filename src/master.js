@@ -1,15 +1,14 @@
-var MyModule = function() {
+define(function(){
+    var privatedoWork = function(){
+        console.log("privateDoWork called");
+    };
 
-    this.foo = function(){
-        console.log("Return foo result");
-    }
+    var Employee = function(){
+        console.log("Employee Created");
+    };
 
-    this.bar = function(){
-        console.log("Return bar result");
-    }
-
-    return this;
-};
+    return Employee;
+})
 
 
 // Uses Node, AMD or browser globals to create a module. This example creates

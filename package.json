@@ -16,12 +16,6 @@
       "files": "src",
       "lib": "src"
     },
-    "style": "src/assets/styles/style.css",
-     "scripts": {
-       "test": "grunt test",
-       "prepublish": "grunt build",
-       "publish": "./build/publish.sh"
-     },
     "dependencies": {
       "header": "github:mattslavin/module_header@master",
       "jquery": "github:components/jquery@^2.1.3"
