@@ -1,3 +1,17 @@
+var MyModule = function() {
+
+    this.foo = function(){
+        console.log("Return foo result");
+    }
+
+    this.bar = function(){
+        console.log("Return bar result");
+    }
+
+    return this;
+};
+
+
 // Uses Node, AMD or browser globals to create a module. This example creates
 // a global even when AMD is used. This is useful if you have some scripts
 // that are loaded by an AMD loader, but they still want access to globals.
@@ -14,26 +28,26 @@
 // If the 'b' module also uses this type of boilerplate, then
 // in the browser, it will create a global .b that is used below.
 
-(function (root, factory) {
-    if (typeof define === 'function' && define.amd) {
-        // AMD. Register as an anonymous module.
-        define(['b'], function (b) {
-            return (root.returnExportsGlobal = factory(b));
-        });
-    } else if (typeof exports === 'object') {
-        // Node. Does not work with strict CommonJS, but
-        // only CommonJS-like enviroments that support module.exports,
-        // like Node.
-        module.exports = factory(require('b'));
-    } else {
-        // Browser globals
-        root.returnExportsGlobal = factory(root.b);
-    }
-}(this, function (b) {
-    //use b in some fashion.
+// (function (root, factory) {
+//     if (typeof define === 'function' && define.amd) {
+//         // AMD. Register as an anonymous module.
+//         define(['b'], function (b) {
+//             return (root.returnExportsGlobal = factory(b));
+//         });
+//     } else if (typeof exports === 'object') {
+//         // Node. Does not work with strict CommonJS, but
+//         // only CommonJS-like enviroments that support module.exports,
+//         // like Node.
+//         module.exports = factory(require('b'));
+//     } else {
+//         // Browser globals
+//         root.returnExportsGlobal = factory(root.b);
+//     }
+// }(this, function (b) {
+//     //use b in some fashion.
 
-    // Just return a value to define the module export.
-    // This example returns an object, but the module
-    // can return a function as the exported value.
-    return {};
-}));
+//     // Just return a value to define the module export.
+//     // This example returns an object, but the module
+//     // can return a function as the exported value.
+//     return {};
+// }));
