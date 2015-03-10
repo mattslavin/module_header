@@ -11,14 +11,15 @@
   ],
   "author": "Sapient",
   "license": "ISC",
-  "dependencies": {
-    "jquery": "*" 
-  },
+
   "jspm": {
     "main": "src/assets/scripts/main",
     "directories" : {
       "lib" : "src",
       "files" : "src"
+    },
+    "dependencies": {
+      "jquery": "*" 
     },
     "shim": {
      "some/global": {
