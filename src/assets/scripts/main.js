@@ -1,11 +1,25 @@
-function testModule(){
-	var foo = function(){
-		console.log("Return foo result");
-	};
+export class Employee {
+	constructor(name){
+		this._name = name;
+	}
 
-	var bar = function(){
-		console.log("Return bar result");
-	};
+	get name(){
+		return this._name;
+	}
 
-	return bar;
+	doWork {
+		return '${this._name} is working';
+	}
 }
+
+// function testModule(){
+// 	var foo = function(){
+// 		console.log("Return foo result");
+// 	};
+
+// 	var bar = function(){
+// 		console.log("Return bar result");
+// 	};
+
+// 	return bar;
+// }
