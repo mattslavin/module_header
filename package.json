@@ -2,7 +2,6 @@
   "name": "module-header",
   "version": "0.1.0",
   "description": "Header Module for Voya.com",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +16,12 @@
       "files": "src",
       "lib": "src"
     },
+    "style": "src/assets/styles/style.css",
+     "scripts": {
+       "test": "grunt test",
+       "prepublish": "grunt build",
+       "publish": "./build/publish.sh"
+     },
     "dependencies": {
       "header": "github:mattslavin/module_header@master",
       "jquery": "github:components/jquery@^2.1.3"
