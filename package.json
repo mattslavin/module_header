@@ -1,0 +1,29 @@
+{
+  "name": "module-header",
+  "version": "0.1.0",
+  "description": "Header Module for Voya.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "header,module, header-module"
+  ],
+  "author": "Sapient",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "*" 
+  },
+  "jspm": {
+    "main": "src/assets/scripts/main",
+    "directories" : {
+      "lib" : "src",
+      "files" : "src"
+    },
+  "shim": {
+     "some/global": {
+       "deps": ["jquery"],
+       "exports": "globalExportName"
+   }
+  }
+}
