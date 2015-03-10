@@ -1,15 +1,42 @@
-var MyModule = function() {
+define(function(){
+    var privatedoWork = function(){
+        console.log("privateDoWork called");
+    };
 
-    this.foo = function(){
-        console.log("Return foo result");
+    var Employee = function(){
+        console.log("Employee Created");
+    };
+
+    return Employee;
+})
+/*
+
+define( function (require, exports, module){
+    
+    var shuffler = require('lib/shuffle');
+
+
+    var MyModule = function() {
+
+        this.foo = function(){
+            console.log("Return foo result");
+        }
+
+        this.bar = function(){
+            console.log("Return bar result");
+        }
+
+        return this;
+    };
+ 
+    exports.randomize = function( input ){
+        return shuffler.shuffle(input);
     }
+});
 
-    this.bar = function(){
-        console.log("Return bar result");
-    }
+*/
 
-    return this;
-};
+
 
 
 // Uses Node, AMD or browser globals to create a module. This example creates

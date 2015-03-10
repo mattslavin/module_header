@@ -19,7 +19,7 @@
     },
     "dependencies": {
       "header": "github:mattslavin/module_header@master",
-      "jquery": ""
+      "jquery": "github:components/jquery@^2.1.3"
     }
   }
 }
